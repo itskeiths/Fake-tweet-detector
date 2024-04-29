@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { IoTicketSharp } from 'react-icons/io5';
 import UserInput from './UserInput';
-import Sentiment from './Sentiment';
 import Fake from './fake_tweet';
 const sideBarItems = [
   {
@@ -11,13 +10,9 @@ const sideBarItems = [
     icon: <IoTicketSharp />,
     component: <UserInput />,
   },
+
   {
-    name: 'Sentiment Analysis Dashboard',
-    icon: <IoTicketSharp />,
-    component: <Sentiment />,
-  },
-  {
-    name: 'Fake Tweet Detection',
+    name: 'History',
     icon: <IoTicketSharp />,
     component: <Fake />,
   },
